@@ -1,0 +1,62 @@
+@import "../styling/variables";
+
+.color-yellow {
+  color: $google-yellow;
+}
+
+.color-blue {
+  color: $google-blue;
+}
+
+.color-red {
+  color: $google-red;
+}
+
+.color-green {
+  color: $google-green;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.bg-banner {
+  background-image: url('/assets/images/banner.png');
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 95%;
+}
+
+.pattern-r {
+  top: 45%;
+}
+
+.btn-hover {
+  background-size: 300% 100%;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  font-size: 12px;
+  height: 45px;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+  outline: none;
+}
+
+.btn-hover.color-gdg {
+  background-image: linear-gradient(to right, #4682fc, #3059ad, #3e44b3, #4071d4);
+  box-shadow: 0 4px 15px 0 rgba(161, 185, 184, 0.75);
+}
+
