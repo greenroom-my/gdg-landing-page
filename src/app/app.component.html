@@ -1,12 +1,24 @@
 <section class="bg-banner">
-  <div class="container">
+  <div class="container d-none d-lg-block">
     <div class="row d-flex bd-highlight pt-3">
-      <div class="p-1 text-white flex-grow-1 bd-highlight"><img src="assets/images/gdg-logo.png" class="w-25"></div>
+      <div class="p-1 text-white flex-grow-1 bd-highlight"><img src="assets/images/gdg-logo-color.png"></div>
       <div class="px-3 pt-5 text-white bd-highlight">Home</div>
       <div class="px-3 pt-5 text-white bd-highlight">Event</div>
       <div class="px-3 pt-5 text-white bd-highlight">News</div>
       <div class="px-3 pt-5 text-white bd-highlight">Contact</div>
     </div>
+
+    <div class="row d-flex bd-highlight pt-3">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+
     <div class="row d-flex align-items-center banner-title-height">
       <div class="w-100">
         <h1 class="text-center text-white banner-title">Google IO 2019 <br> Coming Soon Now</h1>
@@ -21,10 +33,10 @@
   </div>
   <div class="container">
     <div class="row mt-5">
-      <div class="col-md-5 col-12 d-flex justify-content-center">
+      <div class="col-lg-5 col-md-12 col-12 d-flex justify-content-center">
         <img src="assets/images/dev-logo.png">
       </div>
-      <div class="col-md-7 col-12">
+      <div class="col-lg-7 col-md-12 col-12">
         <h3 class="mb-4">About the Community Groups Program</h3>
         <p>This program is dedicated to assisting individual organizers of active mobile, web, cloud, and AI developer communities on their journey leading successful and engaged groups via online
           training, meetup materials, networking opportunities, and more.</p>
@@ -39,7 +51,7 @@
 <section class="mt-md-5 pt-md-5 mt-2 pt-0">
   <div class="container">
     <div class="row">
-      <div class="col-md-5 col-12 d-flex align-items-center">
+      <div class="col-lg-5 col-md-12 col-12 d-flex align-items-center">
         <div>
           <h3 class="mb-4"><span class="color-yellow mr-2"># Explore</span> <span class="color-red mr-2">Our</span> <span class="color-blue mr-2">Past</span>
             <span class="color-green mr-2">Events</span></h3>
@@ -47,7 +59,7 @@
         </div>
       </div>
 
-      <div class="col-md-7 col-12">
+      <div class="col-lg-7 col-md-12 col-12">
         <div class="mt-5">
           <h5 class="mb-0">DevFest x BizFest George Town 2017</h5>
           <p class="mb-0">
@@ -82,11 +94,11 @@
   </div>
   <div class="container my-md-5 my-3 pt-md-5 pt-2">
     <div class="row d-flex justify-content-center">
-      <div class="col-md-10 col-12 mt-5">
+      <div class="col-lg-10 col-md-12 col-12 mt-5">
         <h3 class="mb-4">What's New?</h3>
         <img src="assets/images/img.jpg" class="w-100 rounded">
       </div>
-      <div class="col-md-10 col-12 mt-4">
+      <div class="col-lg-10 col-md-12 col-12 mt-4">
         <h5>Google I/O Extended 18 George Town</h5>
         <p class="text-black-50 mb-2">
           <small>13 August 2018</small>
@@ -115,12 +127,11 @@
 <section>
   <div class="container my-md-5 my-3 pt-md-5 pt-2">
     <div class="row d-flex justify-content-center">
-      <div class="col-md-10 col-12">
+      <div class="col-12">
         <div class="row">
           <div class="col-md-5 col-12 mt-5 d-flex align-items-center">
             <h5>Their work on our website and Internet marketing has made a significant different to our business. We’ve seen a 425% increase in quote requests from the website which has been pretty
               remarkable – but I’d always like to see more!</h5>
-
           </div>
           <div class="col-md-7 col-12 mt-5">
             <img src="assets/images/group.jpg" class="w-100 rounded">
@@ -230,7 +241,7 @@
 
       <div class="col-lg-5 col-md-4 col-12 float-right mt-2 pt-5">
         <div class="pt-5 text-center">
-          <img src="assets/images/gdg-logo.png" class="w-50 text-center">
+          <img src="assets/images/gdg-logo-color.png" class="text-center">
           <div class="text-center pt-2">
             <a href="#" class="text-white mt-5">
               <fa-icon [icon]="faFacebookF" class="mr-3"></fa-icon>
@@ -250,3 +261,14 @@
     </div>
   </div>
 </section>
+
+
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+</script>
