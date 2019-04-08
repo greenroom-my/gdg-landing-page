@@ -1,0 +1,50 @@
+<section class="mt-md-5 pt-md-5 mt-2 pt-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-md-12 col-12 d-flex align-items-center">
+        <div>
+          <h3 class="mb-4"><span class="color-yellow mr-2"># Explore</span> <span class="color-red mr-2">Our</span> <span class="color-blue mr-2">Past</span>
+            <span class="color-green mr-2">Events</span></h3>
+          <a href="https://www.youtube.com/watch?v=8zOCX8K7KOw&t=40s"> <img src="assets/images/hightlight-18.jpg" class="w-100 rounded"></a>
+        </div>
+      </div>
+
+      <div class="col-lg-7 col-md-12 col-12">
+        <div class="mt-5" *ngFor="let item of items | async">
+          <h5 class="mb-0">{{item.title}}</h5>
+          <p class="mb-0">
+            <small>{{item.date.toDate() | date:'dd, LLL'}} | {{item.destination}}</small>
+          </p>
+          <p>{{item.short_description}}</p>
+        </div>
+      </div>
+
+      <!---->
+      <!--<div class="col-lg-7 col-md-12 col-12">-->
+      <!--<div class="mt-5">-->
+      <!--<h5 class="mb-0">DevFest x BizFest George Town 2017</h5>-->
+      <!--<p class="mb-0">-->
+      <!--<small>11th Nov | @acat penang</small>-->
+      <!--</p>-->
+      <!--<p>This program is dedicated to assisting individual organizers of active mobile, web & cloud.</p>-->
+      <!--</div>-->
+
+      <!--<div class="mt-5">-->
+      <!--<h5 class="mb-0">DevFest x BizFest George Town 2016</h5>-->
+      <!--<p class="mb-0">-->
+      <!--<small>11th Nov | @acat penang</small>-->
+      <!--</p>-->
+      <!--<p>This program is dedicated to assisting individual organizers of active web.</p>-->
+      <!--</div>-->
+
+      <!--<div class="mt-5">-->
+      <!--<h5 class="mb-0">DevFest x BizFest George Town 2015</h5>-->
+      <!--<p class="mb-0">-->
+      <!--<small>11th Nov | @acat penang</small>-->
+      <!--</p>-->
+      <!--<p>This program is dedicated to assisting individual organizers of active web.</p>-->
+      <!--</div>-->
+      <!--</div>-->
+    </div>
+  </div>
+</section>
