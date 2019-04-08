@@ -1,0 +1,30 @@
+<section class="bg-banner">
+  <div class="container d-none d-md-block">
+    <div class="row d-flex bd-highlight pt-3">
+      <div class="p-1 text-white flex-grow-1 bd-highlight"><img src="/assets/images/gdg-logo-color.png"></div>
+      <div class="px-3 pt-5 text-white bd-highlight">Home</div>
+      <div class="px-3 pt-5 text-white bd-highlight">Event</div>
+      <div class="px-3 pt-5 text-white bd-highlight">News</div>
+      <div class="px-3 pt-5 text-white bd-highlight">Contact</div>
+    </div>
+  </div>
+
+  <div class="container d-block d-md-none">
+    <div class="row d-flex bd-highlight pt-3">
+      <span style="font-size:30px;cursor:pointer" (click)="toggleNav()">&#9776; open</span>
+      <div id="mySidenav" class="sidenav" [@navBar]="status" >
+        <a class="closebtn" (click)="toggleNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="row d-flex align-items-center banner-title-height">
+    <div class="w-100">
+      <h1 class="text-center text-white banner-title">Google IO 2019 <br> Coming Soon Now</h1>
+    </div>
+  </div>
+</section>
