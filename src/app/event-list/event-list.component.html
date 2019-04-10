@@ -1,24 +1,24 @@
 <section class="mt-md-5 pt-md-5 mt-2 pt-0">
-  <div class="container-fluid">
+  <div class="container">
     <div class="row">
       <div class="col-12">
         <h3 class="mb-4"><span class="color-yellow mr-2"># Explore</span> <span class="color-red mr-2">Our</span> <span class="color-blue mr-2">Past</span>
           <span class="color-green mr-2">Events</span></h3>
       </div>
-      <div class="col-lg-6 col-md-12 col-12">
-        <div>
-          <iframe width="100%" height="315" src="https://www.youtube.com/embed/8zOCX8K7KOw" frameborder="0"
+        <div class="col-lg-6 col-md-12 col-12">
+          <div class="w-100">
+          <iframe width="100%" height="400" src="https://www.youtube.com/embed/8zOCX8K7KOw" frameborder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
 
       <div class="col-lg-6 col-md-12 col-12">
-        <div class="mt-5" *ngFor="let item of items | async">
-          <h5 class="mb-0">{{item.title}}</h5>
-          <p class="mb-0">
+        <div *ngFor="let item of items | async">
+          <h5 class="mb-0 mt-md-0 mt-3">{{item.title}}</h5>
+          <p>
             <small>{{item.date.toDate() | date:'dd, LLL'}} | {{item.destination}}</small>
           </p>
-          <p>{{item.short_description}}</p>
+          <p class="mb-5">{{item.short_description}}</p>
         </div>
       </div>
 
