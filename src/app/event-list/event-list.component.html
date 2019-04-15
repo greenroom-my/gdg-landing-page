@@ -5,49 +5,54 @@
         <h3 class="mb-4"><span class="color-yellow mr-2"># Explore</span> <span class="color-red mr-2">Our</span> <span class="color-blue mr-2">Past</span>
           <span class="color-green mr-2">Events</span></h3>
       </div>
-        <div class="col-lg-6 col-md-12 col-12">
-          <div class="w-100">
-          <iframe width="100%" height="400" src="https://www.youtube.com/embed/8zOCX8K7KOw" frameborder="0"
+      <div class="col-lg-12 col-md-12 col-12">
+        <div class="w-100">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/8zOCX8K7KOw" frameborder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
+    </div>
 
-      <div class="col-lg-6 col-md-12 col-12">
-        <div *ngFor="let item of items | async">
-          <h5 class="mb-0 mt-md-0 mt-3">{{item.title}}</h5>
-          <p>
-            <small>{{item.date.toDate() | date:'dd, LLL'}} | {{item.destination}}</small>
-          </p>
-          <p class="mb-5">{{item.short_description}}</p>
+    <div class="row">
+      <div class="col-lg-3 col-md-12 col-12">
+        <div class="w-100">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/M8kH8-OcZaM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
         </div>
       </div>
 
-      <!---->
-      <!--<div class="col-lg-7 col-md-12 col-12">-->
-      <!--<div class="mt-5">-->
-      <!--<h5 class="mb-0">DevFest x BizFest George Town 2017</h5>-->
-      <!--<p class="mb-0">-->
-      <!--<small>11th Nov | @acat penang</small>-->
-      <!--</p>-->
-      <!--<p>This program is dedicated to assisting individual organizers of active mobile, web & cloud.</p>-->
-      <!--</div>-->
+      <div class="col-lg-3 col-md-12 col-12">
+        <div class="w-100">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/keWI-LxNFRk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+        </div>
+      </div>
 
-      <!--<div class="mt-5">-->
-      <!--<h5 class="mb-0">DevFest x BizFest George Town 2016</h5>-->
-      <!--<p class="mb-0">-->
-      <!--<small>11th Nov | @acat penang</small>-->
-      <!--</p>-->
-      <!--<p>This program is dedicated to assisting individual organizers of active web.</p>-->
-      <!--</div>-->
+      <div class="col-lg-3 col-md-12 col-12">
+        <div class="w-100">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/8R3qJ1wWjzY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+        </div>
+      </div>
 
-      <!--<div class="mt-5">-->
-      <!--<h5 class="mb-0">DevFest x BizFest George Town 2015</h5>-->
-      <!--<p class="mb-0">-->
-      <!--<small>11th Nov | @acat penang</small>-->
+      <div class="col-lg-3 col-md-12 col-12">
+        <div class="w-100">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/hTCPhmmRtSQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                   allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <!--<div class="col-lg-6 col-md-12 col-12">-->
+      <!--<div *ngFor="let item of items | async">-->
+      <!--<h5 class="mb-0 mt-md-0 mt-3">{{item.title}}</h5>-->
+      <!--<p>-->
+      <!--<small>{{item.date.toDate() | date:'dd, LLL'}} | {{item.destination}}</small>-->
       <!--</p>-->
-      <!--<p>This program is dedicated to assisting individual organizers of active web.</p>-->
+      <!--<p class="mb-5">{{item.short_description}}</p>-->
       <!--</div>-->
       <!--</div>-->
     </div>
   </div>
+
+
 </section>
